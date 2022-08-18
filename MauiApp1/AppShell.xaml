@@ -8,13 +8,15 @@
     FlyoutBackgroundImageAspect="AspectFill"
     FlyoutHeaderBehavior="CollapseOnScroll">
 
-    <FlyoutItem Route="animals"
-                FlyoutDisplayOptions="AsMultipleItems">
-        <ShellContent Route="welcomePage"
+    <FlyoutItem Route="root" FlyoutDisplayOptions="AsMultipleItems">
+        <ShellContent Route="welcome"
                       Title="Welcome"
                       ContentTemplate="{DataTemplate pages:WelcomePage}" />
-        <ShellContent Route="botPage"
+        <ShellContent Route="bot"
                       Title="Bot"
                       ContentTemplate="{DataTemplate pages:BotPage}" />
+        <ShellContent Route="categories"
+                      Title="Categories"
+                      ContentTemplate="{DataTemplate pages:CategoriesPage}" />
     </FlyoutItem>
 </Shell>

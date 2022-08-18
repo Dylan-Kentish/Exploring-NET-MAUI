@@ -2,7 +2,7 @@ namespace MauiApp1.Pages;
 
 public partial class BotPage
 {
-    int count = 0;
+    int _count = 0;
 
     public BotPage()
     {
@@ -11,12 +11,9 @@ public partial class BotPage
 
     private void OnCounterClicked(object sender, EventArgs e)
     {
-        count++;
+        _count++;
 
-        if (count == 1)
-            CounterBtn.Text = $"Clicked {count} time";
-        else
-            CounterBtn.Text = $"Clicked {count} times";
+        CounterBtn.Text = $"Clicked {_count} times{(_count > 1 ? string.Empty: 's')}";
 
         SemanticScreenReader.Announce(CounterBtn.Text);
     }

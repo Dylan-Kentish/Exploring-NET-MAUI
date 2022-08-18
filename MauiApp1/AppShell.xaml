@@ -8,7 +8,7 @@
     FlyoutBackgroundImageAspect="AspectFill"
     FlyoutHeaderBehavior="CollapseOnScroll">
 
-    <FlyoutItem Route="root" FlyoutDisplayOptions="AsMultipleItems">
+    <TabBar Route="root" FlyoutDisplayOptions="AsMultipleItems">
         <ShellContent Route="welcome"
                       Title="Welcome"
                       ContentTemplate="{DataTemplate pages:WelcomePage}" />
@@ -18,5 +18,5 @@
         <ShellContent Route="categories"
                       Title="Categories"
                       ContentTemplate="{DataTemplate pages:CategoriesPage}" />
-    </FlyoutItem>
+    </TabBar>
 </Shell>
